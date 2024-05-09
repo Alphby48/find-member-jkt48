@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <p class="text-center fs-1 fw-semibold">Member JKT48</p>
+      <div class="d-flex justify-content-center w-100">
+        <form
+          action=""
+          class="w-75 d-flex justify-content-center grid gap-2 form-memeber"
+        >
+          <input
+            type="search"
+            class="w-75 input-member rounded"
+            placeholder="cari member"
+          />
+          <button type="submit" class="btn btn-primary w-10">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <a href="" class="btn btn-warning w-10">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </a>
+        </form>
+      </div>
+    </div>
+
+    <div
+      class="d-flex flex-wrap justify-content-center w-100 memb-body bg-secondary-subtle"
+    >
+      <div class="container m-2">
+        <h3 class="my-3 ms-4">Member Reguler</h3>
+        <div class="row mt-4 member-reguler justify-content-center">
+          <!-- isi -->
+        </div>
+      </div>
+
+      <!--  -->
+
+      <div class="container m-2">
+        <h3 class="mt-5 ms-4">Member Trainee</h3>
+        <div class="row mt-4 justify-content-center member-trainee"></div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Member JKT48
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!--  -->
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
