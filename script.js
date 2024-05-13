@@ -23,12 +23,12 @@ memberTrainee.forEach((m) => {
 
 // add find member
 
-formFindMember.addEventListener("submit", function (e) {
+formFindMember.addEventListener("submit", async function (e) {
   e.preventDefault();
   const findMember = member.filter((m) =>
     m.name.toUpperCase().includes(inputMember.value.toUpperCase())
   );
-  promiseFind(findMember);
+  await promiseFind(findMember);
   showUI(promiseFind);
 });
 
